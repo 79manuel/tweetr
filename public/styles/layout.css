@@ -15,9 +15,30 @@ html {
  */
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   color: #244751;
   background-color: #eee;
+}
+
+
+
+/*================
+ CLASS Selectors
+================*/
+
+/* ==== main tag ======== */
+
+.container {
+width: 450px;
+background-color: white;
+padding: 30px;
+margin: 140px auto 0 auto;
+border: 1px solid black;
+border-radius: 10%;
+
+
+
 }
 
 /*
