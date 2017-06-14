@@ -14,3 +14,90 @@ form input {
 form .counter {
   float: right;
 }
+
+/*=============
+CLASS Selectors
+===============*/
+.over{
+  color: red;
+}
+
+.new-tweet{
+  width: 450px;
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+/*=============
+ID Selectors
+===============*/
+
+#tweets{
+  margin-top: 40px;
+}
+
+
+#tweets header{
+  background-color: #7F8C90;
+  height: 70px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#tweets header img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 4px auto;
+}
+
+#tweets header h1 {
+  font-size: 25px;
+  float: left;
+  margin-top: 9px;
+}
+
+#tweets header p {
+  float: right;
+  margin-top: 7px;
+  margin-right:8px;
+}
+
+#tweets div {
+  height: 60px;
+
+}
+
+#tweets footer {
+  border-top: 1px solid black;
+}
+
+#tweets footer p {
+  margin: 8px 0px;
+}
+
+#tweets article {
+  width: 450px;
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#tweets article:hover {
+  width: 450px;
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 0.75;
+  transition: 0.5s;
+
+}

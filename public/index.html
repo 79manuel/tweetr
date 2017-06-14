@@ -19,10 +19,10 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
@@ -36,11 +36,25 @@
         <form action="/tweets" method="POST">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
-          <span class="counter">140</span>
+          <span class="counter"></span>
         </form>
       </section>
+      <section id="tweets">
+        <article>
+          <header>
+            <img src="./images/icon.png">
+            <h1>Paco Jones</h1>
+            <p id="p_header">@PJones</p>
+          </header>
+          <div>
+            <p id="p_div">Little tweet here</p>
 
+          </div>
+          <footer>
+            <p id="p_footer">10 days ago</p>
+          </footer>
+        </article>
+      </section>
     </main>
-
   </body>
 </html>
