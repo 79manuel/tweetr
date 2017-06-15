@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 const data = [
   {
@@ -52,12 +52,14 @@ function createTweetElement(data) {
   var $article = $("<article>");
   var $header = $("<header>");
   var $div = $("<div>");
-  var $footer = $("<footer>");
+  var $footer = $("<footer class='tweet-footer'>");
   var $img = $("<img>").attr("src",data.user.avatars.small);
   var $h1 = $("<h1>").text(data.user.name);
   var $p_header = $("<p>").text(data.user.handle);
-  var $p_div = $("<p>").text(data.user.content.text);
-  var $p_footer = $("<p>").text(data.user.created_at);
+  var $p_div = $("<p>").text(data.content.text);
+  var $moment = moment(data.created_at).startOf('hour').fromNow();
+  var $p_footer = $("<p>");
+  //var $p_footer = $("<p>").text('asdfsdf');
 
   $header.append($p_header);
   $header.append($img);
@@ -68,21 +70,59 @@ function createTweetElement(data) {
   $div.append($p_div);
   $article.append($div);
 
+  $footer.prepend('<img src="/images/flag.png"/>');
+  $footer.prepend('<img src="/images/refresh.png"/>');
+  $footer.prepend('<img src="/images/heart.png"/>');
+  $p_footer.prepend($moment);
   $footer.append($p_footer);
   $article.append($footer);
-
 
   return $article;
 
 }
 
-function renderTweets(arrayTweetObject) {
-  for (let key in arrayTweetObject) {
-    let article = createTweetElement(arrayTweetObject[key]);
-    $('#tweets').prepend(article);
+function renderTweets(tweets) {
+  $('#tweets').empty();
+  for (let key in tweets) {
+  let article = createTweetElement(tweets[key]);
+  $('#tweets').prepend(article);
   }
 }
 
+function loadTweets() {
+    $.ajax({
+      url: '/tweets',
+      type: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        renderTweets(data);
+      }
+    });
+  }
+  loadTweets();
+
+
+$('form').on('submit', function(event) {
+  event.preventDefault();
+  var text = $('textarea').val();
+  if (text.length === 0) {
+    alert('The text area is empty');
+  } else if (text.length > 140) {
+    alert('Max Character limit exceeded');
+  } else {
+    $.ajax({
+      url: '/tweets',
+      method: 'POST',
+      data: $(this).serialize()
+    }).done(function() {
+      loadTweets();
+    });
+  }
+});
 renderTweets(data);
 
-}
+$('#toogle').on('click', function() {
+  $('.new-tweet').slideToggle('slow');
+});
+
+});

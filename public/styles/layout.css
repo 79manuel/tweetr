@@ -32,10 +32,10 @@ body {
 .container {
 
 width: 500px;
-height: 1000px;
 background-color: white;
 margin: 140px auto 0 auto;
 border: 1px solid black;
+padding-top:15px;
 
 
 
