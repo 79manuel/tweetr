@@ -1,17 +1,27 @@
+
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Twitter App is a full stack application built with Node, Express, MongoDB that allows users to send a short message (max. 140 characters) and publish it.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
-
-## Getting Started
-
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+## Final Product
+!["Screenshot of Home Page. Compose section hidden"](https://github.com/79manuel/tinyApp/blob/master/docs/new-page.png?raw=true)
+!["Screenshot of Home Page. Compose section visible"](https://github.com/79manuel/tinyApp/blob/master/docs/urls-logout-page.png)
+!["Screenshot of Home Page. New tweet posted"](https://github.com/79manuel/tinyApp/blob/master/docs/urls-page.png)
 
 ## Dependencies
 
+- Node.js
 - Express
-- Node 5.10.x or above
+- body-parser
+- express
+- nodemon
+- chance
+- md5
+- moment
+- mongodb
+
+## Getting Started
+
+- Install all dependencies (using the 'npm install' command).
+- Run the development web server using the 'npm trun local' command
+- Once app loaded, click on "Compose" button to write a new tweet.

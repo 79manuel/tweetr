@@ -5,14 +5,13 @@ $(document).ready(function () {
   count.text(maxCharacters);
 
   $('textarea').on('keydown', function() {
-      var characters = $(this).val().length;
+    var characters = $(this).val().length;
 
-      if (characters > maxCharacters) {
-          count.addClass('over');
-      } else {
-          count.removeClass('over');
-      }
-
-      count.text(maxCharacters - characters);
+    if (characters > maxCharacters) {
+      count.addClass('over');
+    } else {
+      count.removeClass('over');
+    }
+    count.text(maxCharacters - characters);
   });
 });

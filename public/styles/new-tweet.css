@@ -91,6 +91,7 @@ ID Selectors
   background-color: lightgrey;
   padding: 30px;
   margin: 0 auto;
+  margin-top: 20px;
   border: 1px solid black;
   border-radius: 10px;
   opacity: 1;
@@ -98,7 +99,7 @@ ID Selectors
 
 #tweets article:hover {
   opacity: 0.5;
-  transition: 1s;
+  transition: 0.1s;
 }
 
 #tweets article footer img {
@@ -110,16 +111,8 @@ ID Selectors
 }
 
 #tweets article:hover footer img{
-/*  width: 450px;
-  background-color: lightgrey;
-  padding: 30px;
-  margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-top: 10px;
-  width:15px;
-  height:15px;*/
+
   opacity: 0.5;
-  transition: 1s;
+  transition: 0.1s;
   visibility: visible;
 }
