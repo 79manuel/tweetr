@@ -37,7 +37,7 @@
   padding:15px;
   box-shadow: 2px 2px black;
   border-radius: 5px;
-  background-color: #72AE7C;
+  background-color: lightgrey;
 }
 #nav-bar button:hover {
   float: right;
@@ -45,7 +45,7 @@
   padding:15px;
   box-shadow: 2px 2px black;
   border-radius: 5px;
-  background-color: #72AE7C;
+  background-color: lightgrey;
   opacity: 0.7;
   transition: 1s;
 }
@@ -54,7 +54,7 @@
   margin-top: 15px;
   padding:15px;
   border-radius: 5px;
-  background-color: #72AE7C;
+  background-color: lightgrey;
 }
 
 #nav-bar button img {
