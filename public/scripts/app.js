@@ -115,7 +115,9 @@ $(function(){
         method: 'POST',
         data: $(this).serialize()
       }).done(function() {
+        $('textarea').val('');
         loadTweets();
+        $('.counter').text('140');
       });
     }
   });
