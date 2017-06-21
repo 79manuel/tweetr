@@ -10,6 +10,11 @@ module.exports = function makeDataHelpers(db) {
       callback(null, true);
     },
 
+    createNewUser: function(newUser, callback) {
+      db.collection("users").insertOne(newUser);
+      callback(null, true);
+    },
+
     getTweets: function(callback) {
       db.collection("tweets").find().toArray((err, tweets) => {
         if (err) {

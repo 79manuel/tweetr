@@ -1,12 +1,5 @@
 
-/*================
- GLOBAL Selectors
-================*/
 
-
-/*================
- ID Selectors
-================*/
 
 #nav-bar{
   position: fixed;
@@ -17,7 +10,6 @@
   padding: 0em 2em;
   color:#e8fdff;
   height: 80px;
-
 }
 #nav-bar .logo {
   width: 80px;
@@ -31,7 +23,7 @@
   padding: 17px;
 }
 
-#nav-bar button {
+button {
   float: right;
   margin-top: 15px;
   padding:15px;
@@ -39,17 +31,13 @@
   border-radius: 5px;
   background-color: lightgrey;
 }
-#nav-bar button:hover {
-  float: right;
-  margin-top: 15px;
-  padding:15px;
-  box-shadow: 2px 2px black;
-  border-radius: 5px;
-  background-color: lightgrey;
+
+button :hover {
   opacity: 0.7;
   transition: 1s;
 }
-#nav-bar button:click {
+
+button:click {
   float: right;
   margin-top: 15px;
   padding:15px;
@@ -57,12 +45,9 @@
   background-color: lightgrey;
 }
 
-#nav-bar button img {
+button img {
   width: 15px;
   height: 15px;
 }
 
 
-/*================
- CLASS Selectors
-================*/
