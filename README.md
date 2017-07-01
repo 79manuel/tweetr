@@ -4,10 +4,10 @@
 Twitter App is a full stack application built with Node, Express, MongoDB that allows users to send a short message (max. 140 characters) and publish it.
 
 ## Final Product 
-!["Screenshot of Home Page. Compose section hidden"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20no%20compose.png)
-!["Screenshot of Home Page. Compose new tweet"](https://github.com/79manuel/tweetr/blob/master/docs/home%20page%20compose%20new%20tweet.png)
-!["Screenshot of Home Page. New tweet posted"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20post%20new%20tweet.png)
-!["Screenshot of Home Page. Hover"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20hover.png)
+!["Screenshot of Home Page. Compose section hidden"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20no%20compose.png?raw=true)
+!["Screenshot of Home Page. Compose new tweet"](https://github.com/79manuel/tweetr/blob/master/docs/home%20page%20compose%20new%20tweet.png?raw=true)
+!["Screenshot of Home Page. New tweet posted"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20post%20new%20tweet.png?raw=true)
+!["Screenshot of Home Page. Hover"](https://github.com/79manuel/tweetr/blob/master/docs/Home%20page%20hover.png?raw=true)
 
 ## Dependencies
 
